@@ -5,6 +5,7 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/punigonzalez/gambitUser/awsgo"
 )
 
 func main() {
@@ -13,5 +14,6 @@ func main() {
 }
 
 func ejecutoLambda(ctx context.Context, event events.CognitoEventUserPoolsPostConfirmation) (events.CognitoEventUserPoolsPostConfirmation, error) {
+	awsgo.InicializoAWS()
 
 }
