@@ -8,3 +8,5 @@ type SecretRDSjson struct {
 	Port     int    `json:"port"`
 	Dbname   string `json:"dbname"`
 }
+
+//hola
